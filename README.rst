@@ -41,7 +41,9 @@ The package will auto-replace itself and return ``backtrader``
 
 Installation
 ============
-::
+
+Use pip::
+
    pip install backtrader_contrib
 
 Usage
