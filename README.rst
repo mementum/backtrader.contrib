@@ -39,6 +39,11 @@ monkey-patched (added) to ``backtrader.indicators``
 
 The package will auto-replace itself and return ``backtrader``
 
+Installation
+============
+::
+   pip install backtrader_contrib
+
 Usage
 =====
 

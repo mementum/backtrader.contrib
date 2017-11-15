@@ -36,8 +36,8 @@ vname = 'version.py'
 with open(os.path.join(pname, vname)) as f:
     exec(compile(f.read(), vname, 'exec'))
 
-# Generate linkes
-gurl = 'https://github.com/mementum/' + pname
+# Generate links
+gurl = 'https://github.com/mementum/' + pname.replace('_', '.')
 gdurl = gurl + '/tarball/' + __version__
 
 setuptools.setup(
