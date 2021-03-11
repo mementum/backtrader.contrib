@@ -20,6 +20,10 @@
 ###############################################################################
 from .. import loader
 import backtrader as bt
+from . import keltner as keltner
 
 
 loader(__file__, bt.Indicator, bt.indicators)
+
+for name in keltner.__all__:
+    setattr(bt.indicators, name, getattr(keltner, name))
